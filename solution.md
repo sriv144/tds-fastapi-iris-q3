@@ -4,6 +4,24 @@
 
 Pending deployment URL.
 
+Local verification passed:
+
+```json
+{"prediction": 0, "class_name": "setosa"}
+```
+
+Public repo:
+
+```text
+https://github.com/sriv144/tds-fastapi-iris-q3
+```
+
+Render Blueprint deploy link:
+
+```text
+https://dashboard.render.com/blueprint/new?repo=https://github.com/sriv144/tds-fastapi-iris-q3
+```
+
 ## ELI15 step-by-step solution
 
 1. Make a FastAPI app.
@@ -73,7 +91,13 @@ Pending deployment URL.
 
 7. Deploy the app.
 
-   I deployed it to Vercel, which gives an accepted `*.vercel.app` URL. The root `app.py` contains the FastAPI app, and `api/index.py` imports it so Vercel can serve it as a Python serverless function.
+   The project supports Vercel, which gives an accepted `*.vercel.app` URL. The root `app.py` contains the FastAPI app, and `api/index.py` imports it so Vercel can serve it as a Python serverless function.
+
+   I also added `render.yaml`, so it can be deployed on Render as a web service using:
+
+   ```text
+   https://dashboard.render.com/blueprint/new?repo=https://github.com/sriv144/tds-fastapi-iris-q3
+   ```
 
 8. Submit only the deployed app URL.
 
